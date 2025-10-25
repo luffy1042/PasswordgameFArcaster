@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuirkyLock – The Password Challenge</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="QuirkyLock – The Password Challenge" />
+    <meta property="og:description" content="Can you survive all the password rules? Try the viral game QuirkyLock now!" />
+    <meta property="og:image" content="https://quirkylock-zaf860xou-luffy1042s-projects.vercel.app/assets/icon.webp" />
+    <meta property="og:url" content="https://quirkylock-zaf860xou-luffy1042s-projects.vercel.app/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Farcaster Frame Meta Tags -->
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://quirkylock-zaf860xou-luffy1042s-projects.vercel.app/assets/icon.webp" />
+    <meta property="fc:frame:button:1" content="Play Game" />
+    <meta property="fc:frame:button:1:action" content="link" />
+    <meta property="fc:frame:button:1:target" content="https://quirkylock-zaf860xou-luffy1042s-projects.vercel.app/" />
+    
+    <!-- Additional Meta Tags for Frame Validation -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="QuirkyLock – The Password Challenge" />
+    <meta name="twitter:description" content="Can you survive all the password rules? Try the viral game QuirkyLock now!" />
+    <meta name="twitter:image" content="https://quirkylock-zaf860xou-luffy1042s-projects.vercel.app/assets/icon.webp" />
+    
+    <!-- Farcaster Frame SDK -->
+    <script src="https://unpkg.com/@farcaster/frame-sdk@latest/dist/frame-sdk.js"></script>
+</head>
+<body>
+    <h1>This is a Farcaster Frame for QuirkyLock.</h1>
+    <p>Click the "Play Game" button to start playing QuirkyLock!</p>
+    
+    <script>
+        // Initialize Farcaster Frame SDK
+        if (typeof window !== 'undefined' && window.farcaster) {
+            window.farcaster.actions.ready();
+        }
+    </script>
+</body>
+</html>

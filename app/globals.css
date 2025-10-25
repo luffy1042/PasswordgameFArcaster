@@ -5,6 +5,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
     
     /* halftone */
     /* https://css-irl.info/css-halftone-patterns/ */
@@ -21,6 +24,23 @@ body {
     background-size: var(--bgSize) var(--bgSize);
     background-position: 0 0, var(--bgPosition) var(--bgPosition);
     
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        --dotSize: 0.2rem;
+        --bgSize: 1.1rem;
+        --bgPosition: calc(var(--bgSize) / 2);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        --dotSize: 0.15rem;
+        --bgSize: 0.9rem;
+        --bgPosition: calc(var(--bgSize) / 2);
+    }
 }
 
 code {

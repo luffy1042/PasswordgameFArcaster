@@ -8,8 +8,7 @@ import { useAutoAnimate } from '@formkit/auto-animate/react'
 import styles from './page.module.css'
 import PasswordBox from "../components/PasswordBox";
 import RuleBox from "../components/RuleBox";
-
-
+import PaymentGate from "../components/PaymentGate";
 
 import ruleList, {sort_rules} from "../rules/rules";
 
@@ -24,10 +23,20 @@ export default function Home(){
     const pswdBoxRef = useRef(null);
     const [aaParent, aaEnableAnimations] = useAutoAnimate();
     const [allSolved, setAllSolved] = useState(false);
+    const [hasPaid, setHasPaid] = useState(false);
 
+
+    // Check if user has already paid
+    useEffect(() => {
+        const paidStatus = localStorage.getItem('quirkylock_paid');
+        if (paidStatus === 'true') {
+            setHasPaid(true);
+        }
+    }, []);
 
     // initialization rule numbers
     useEffect(() => {
+        if (!hasPaid) return;
 
         for (let i = 0; i < ruleList.length; i++) {
             ruleList[i].num = i + 1;
@@ -36,7 +45,7 @@ export default function Home(){
 
         setRuleState(ruleList);
 
-    }, []);
+    }, [hasPaid]);
 
 
 
@@ -107,8 +116,13 @@ export default function Home(){
 
     }
 
+    // Show payment gate if user hasn't paid
+    if (!hasPaid) {
+        return <PaymentGate onPaymentComplete={() => setHasPaid(true)} />
+    }
+
     return (
-        <>
+    <>
         <div className={styles.container}>
             
             <div className={styles.title}>
