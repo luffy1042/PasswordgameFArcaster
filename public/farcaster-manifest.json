@@ -1,0 +1,55 @@
+{
+  "name": "QuirkyLock",
+  "description": "The ultimate password challenge game with USDC payment gate. Can you survive all the password rules?",
+  "image": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+  "external_url": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app",
+  "version": "1.0.0",
+  "author": "luffy1042",
+  "homepage": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app",
+  "repository": "https://github.com/luffy1042/PasswordgameFArcaster",
+  "license": "MIT",
+  "keywords": ["password", "game", "challenge", "farcaster", "miniapp", "usdc", "base"],
+  "categories": ["games", "entertainment", "puzzle"],
+  "tags": ["password-game", "farcaster-miniapp", "usdc-payment", "base-network"],
+  "screenshots": [
+    {
+      "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+      "alt": "QuirkyLock Game Screenshot",
+      "type": "image/webp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "features": [
+    "USDC Payment Gate",
+    "Mobile Responsive",
+    "Farcaster Integration",
+    "Base Network Support",
+    "RainbowKit Wallet Connection"
+  ],
+  "requirements": {
+    "payment": "0.01 USDC on Base",
+    "wallet": "Any Web3 wallet",
+    "network": "Base Mainnet"
+  },
+  "social": {
+    "twitter": "https://twitter.com/luffy1042",
+    "github": "https://github.com/luffy1042/PasswordgameFArcaster"
+  },
+  "miniapp": {
+    "type": "game",
+    "category": "entertainment",
+    "payment_required": true,
+    "payment_amount": "0.01",
+    "payment_currency": "USDC",
+    "payment_network": "base",
+    "wallet_required": true,
+    "mobile_optimized": true,
+    "farcaster_native": true
+  }
+}

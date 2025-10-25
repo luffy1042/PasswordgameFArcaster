@@ -1,0 +1,81 @@
+{
+  "name": "QuirkyLock - Password Challenge",
+  "description": "The ultimate password challenge game with USDC payment gate. Can you survive all the password rules?",
+  "image": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+  "external_url": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Game"
+    },
+    {
+      "trait_type": "Type",
+      "value": "Password Challenge"
+    },
+    {
+      "trait_type": "Payment",
+      "value": "0.01 USDC"
+    },
+    {
+      "trait_type": "Network",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Platform",
+      "value": "Farcaster Mini App"
+    }
+  ],
+  "background_color": "#fffaff",
+  "theme_color": "#533ea5",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "entertainment", "puzzle"],
+  "screenshots": [
+    {
+      "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play Game",
+      "short_name": "Play",
+      "description": "Start the password challenge",
+      "url": "/",
+      "icons": [
+        {
+          "src": "https://quirkylock-pd6o7szox-luffy1042s-projects.vercel.app/assets/icon.webp",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
