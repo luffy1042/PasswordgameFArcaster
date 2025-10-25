@@ -1,0 +1,16 @@
+{
+    "version": "1",
+    "title": "QuirkyLock – The Password Challenge",
+    "subtitle": "Follow the rules... if you can!",
+    "description": "A chaotic password challenge that now lives onchain. Pay 0.001 USDC to play.",
+    "image": "https://passwordgame-delta.vercel.app/assets/inapp.webp",
+    "splash_background_color": "#E5D9F2",
+    "actions": [
+      {
+        "label": "Play Game",
+        "type": "link",
+        "target": "https://passwordgame-delta.vercel.app/"
+      }
+    ]
+  }
+  
