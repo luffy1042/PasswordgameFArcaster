@@ -1,0 +1,36 @@
+{
+  "frame": {
+    "name": "Password Game",
+    "version": "1",
+    "iconUrl": "https://quirkylock-luffy1042s-projects.vercel.app/icon.png",
+    "homeUrl": "https://quirkylock-luffy1042s-projects.vercel.app",
+    "imageUrl": "https://neal.fun/share-cards/password-game.png?v=2",
+    "splashImageUrl": "https://quirkylock-luffy1042s-projects.vercel.app/splash.png",
+    "splashBackgroundColor": "#E5D9F2",
+    "webhookUrl": "https://quirkylock-luffy1042s-projects.vercel.app/api/webhook",
+    "subtitle": "Survive the password chaos!",
+    "description": "A game that tests your password strength, your patience, and your will to live",
+    "screenshotUrls": [
+      "https://neal.fun/share-cards/password-game.png?v=2"
+    ],
+    "primaryCategory": "games",
+    "tags": [
+      "iq",
+      "password",
+      "intelligent",
+      "puzzle",
+      "test"
+    ],
+    "tagline": "Follow the rules… if you can!",
+    "ogTitle": "Password Game",
+    "ogDescription": "A game that tests your password strength, your patience, and your will to live",
+    "ogImageUrl": "https://neal.fun/share-cards/password-game.png?v=2"
+  },
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  }
+}
+
+  
